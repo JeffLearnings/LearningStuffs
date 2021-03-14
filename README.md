@@ -1,7 +1,6 @@
 ### Udacity Submitting Repo
 
 ## Robotics Software Engineer program
-<br>
 Click the rOS folder or this link: https://github.com/JeffLearnings/LearningStuffs/tree/master/rOS
 
 ## C++ program

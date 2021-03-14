@@ -1,4 +1,4 @@
-prefix=/home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/devel
+prefix=/home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/devel
 
 Name: my_robot
 Description: Description of my_robot

@@ -1,8 +1,8 @@
-prefix=/home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/devel
+prefix=/home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/devel
 
 Name: simple_arm
 Description: Description of simple_arm
 Version: 0.0.0
-Cflags: -I/home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/devel/include
+Cflags: -I/home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/devel/include
 Libs: -L${prefix}/lib 
 Requires: 

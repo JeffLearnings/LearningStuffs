@@ -67,14 +67,14 @@ set(simple_arm_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(simple_arm_SOURCE_PREFIX /home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/src/simple_arm)
-  set(simple_arm_DEVEL_PREFIX /home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/devel)
+  set(simple_arm_SOURCE_PREFIX /home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/src/simple_arm)
+  set(simple_arm_DEVEL_PREFIX /home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/devel)
   set(simple_arm_INSTALL_PREFIX "")
   set(simple_arm_PREFIX ${simple_arm_DEVEL_PREFIX})
 else()
   set(simple_arm_SOURCE_PREFIX "")
   set(simple_arm_DEVEL_PREFIX "")
-  set(simple_arm_INSTALL_PREFIX /home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/install)
+  set(simple_arm_INSTALL_PREFIX /home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/install)
   set(simple_arm_PREFIX ${simple_arm_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(simple_arm_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/devel/include " STREQUAL " ")
+if(NOT "/home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/devel/include " STREQUAL " ")
   set(simple_arm_INCLUDE_DIRS "")
-  set(_include_dirs "/home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/devel/include")
+  set(_include_dirs "/home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/devel/include " STREQU
         message(FATAL_ERROR "Project 'simple_arm' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'simple_arm' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/src/simple_arm/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'simple_arm' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/src/simple_arm/${idir}'.  ${_report}")
     endif()
     _list_append_unique(simple_arm_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/thangrollsegg/workspaces/Udacs/rOS/udac_ws2/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/thangrollsegg/workspaces/Submitter/rOS/udac_ws2/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

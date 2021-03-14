@@ -64,7 +64,7 @@ class StartBrain {
       //bool foundBall{false};
       double goLeft{0.25*step}, goRight{0.75*step};
 
-      for(int i=0;i<imgSize-1;++i) {
+      for(int i=0;i<imgSize-1;i+=3) {
         if(img.data[i] == white_pixel 
             && img.data[i+1] == white_pixel
             && img.data[i+2] == white_pixel){

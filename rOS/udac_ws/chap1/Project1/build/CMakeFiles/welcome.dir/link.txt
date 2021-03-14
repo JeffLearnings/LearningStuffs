@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11  -shared -Wl,-soname,libwelcome.so -o libwelcome.so CMakeFiles/welcome.dir/scripts/welcome_message.cpp.o  -L/usr/lib/x86_64-linux-gnu/gazebo-9/plugins 

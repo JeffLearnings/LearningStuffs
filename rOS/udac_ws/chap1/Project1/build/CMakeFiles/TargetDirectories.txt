@@ -1,0 +1,3 @@
+/home/thangrollsegg/workspaces/udac_ws/chap1/Project1/build/CMakeFiles/rebuild_cache.dir
+/home/thangrollsegg/workspaces/udac_ws/chap1/Project1/build/CMakeFiles/welcome_message.dir
+/home/thangrollsegg/workspaces/udac_ws/chap1/Project1/build/CMakeFiles/edit_cache.dir
